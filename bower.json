@@ -1,0 +1,22 @@
+{
+  "name": "node-authentication",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "edgarOPG <eopg95@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/scotch-io/easy-node-authentication",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "bootstrap-social": "^5.1.1"
+  }
+}

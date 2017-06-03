@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/bootstrap-social/bootstrap-social.css')
+    link(rel='stylesheet', href='/stylesheets/metisMenu.min.css')
+    link(rel='stylesheet', href='/stylesheets/stylish-portfolio.css')
+    script(src='/javascripts/angular/angular.min.js')
+    script(src='/javascripts/angular-ui-router/release/angular-ui-router.min.js')
+    script(src='/javascripts/angular-app.js')
+
+    // Custom CSS
+    link(rel='stylesheet' href='/stylesheets/sb-admin-2.css')
+    // Custom Fonts
+    link(rel='stylesheet' href='/stylesheets/font-awesome.min.css')
+  body(ng-app='scrumApp')
+    div.container
+      if(status != undefined)
+        div(class=`alert alert-${status.code} alert-dismissable`) #{status.message}
+          //a.close(href='#', data-dismiss='alert') x
+    block content
+    // script(src='/javascripts/jquery.min.js')
+    // Bootstrap Core JavaScript
+    // script(src='/bootstrap/js/bootstrap.min.js')
+    // Metis Menu Plugin JavaScript
+    // script(src='/javascripts/metisMenu.min.js')
+    // Custom Theme JavaScript
+    // script(src='/javascripts/sb-admin-2.js')
